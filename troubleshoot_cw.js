@@ -25,7 +25,7 @@ const findLogs =  async (cloudwatchlogs,logname,start,end) => {
             data.logGroups.forEach(log => {             
 
                 if (logname.length === 0) {
-                    console.log('No logname')   
+                    console.log('Please indicate a log group name.')   
 
                     return 
 
@@ -42,8 +42,7 @@ const findLogs =  async (cloudwatchlogs,logname,start,end) => {
                       if (err) console.log(err, err.stack); 
         
                      data.logStreams.forEach(stream => (                        
-                        console.log(start),
-                        console.log(end),
+                     
                         getLogMessages(cloudwatchlogs,log.logGroupName,stream.logStreamName, start,end)                           
                          ))                 
                          
