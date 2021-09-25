@@ -72,8 +72,8 @@ const logName = options.logname ? options.logname : ""
 console.log(options)
 findLogs(cloudwatchlogs, logName,alphaTime,omegaTime)
 
-
 // node troubleshoot_cw.js -l lambda -a "2021-09-24 16:00:00" -o "2021-09-24 16:10:00"
-
-
+//Elliott Arnold NodeJs practice 
+//Retrieve CloudwatchLogs based on timeframe and logname 
+//Practice 9-4-21  
 
