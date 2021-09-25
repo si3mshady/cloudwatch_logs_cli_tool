@@ -2,7 +2,7 @@ const moment = require('moment')
 
 // startime = YYYY-MM-DD HH:MM:SS
 
-module.exports =  parseStartEndTimes =  (starttime=start,endtime=end) => {
+module.exports =  parseStartEndTimes =  (starttime,endtime) => {
 
   
     return {
